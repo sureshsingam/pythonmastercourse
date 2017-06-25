@@ -1,0 +1,4 @@
+ 50.00 Fahrenheit
+ -4.00 Fahrenheit
+ None
+ 212.00 Fahrenheit
