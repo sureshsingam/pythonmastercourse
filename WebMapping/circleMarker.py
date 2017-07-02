@@ -48,8 +48,8 @@ fg = folium.FeatureGroup(name="My Map")
 #Adding markers at different coordinates
 for x,y,h,v_name,loc in result:
     popupStr= "Elevation for {1}\n located in {2}\n is: {0}m".format(h,v_name,loc)
-    fg.add_child(folium.Marker(location=[x,y],popup=folium.Popup(popupStr),icon=folium.Icon(color=color_producer(h))))
+    fg.add_child(folium.CircleMarker(location=[x,y],radius=3,color=color_producer(h),weight=2,fill_color=color_producer(h),fill_opacity=0.5,popup=folium.Popup(popupStr)))
 
 map.add_child(fg)
 
-map.save("FrederictonBaseMap_AddMultipleMarkers.html")
+map.save("FrederictonBaseMap_CircleMarkers.html")
