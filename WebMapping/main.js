@@ -1,4 +1,4 @@
-function myfunction(){
+function myfunction() {
   console.log('Hello')
 }
 
